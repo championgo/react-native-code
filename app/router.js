@@ -5,6 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import { connect } from 'react-redux'
 import HomeScreen from './views/home';
 import LoginScreen from './views/login';
+import WalkthroughAppUsageHints from './containers/Walkthrough/WalkthroughAppUsageHints';
+import WalkthroughDiscoverPlace from './containers/Walkthrough/WalkthroughDiscoverPlace';
 import Loading from './views/Loading'
 //import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -15,7 +17,7 @@ const App = () => {
 
     return (
             <Stack.Navigator initialRouteName="Home" headerMode="none">
-                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Home" component={WalkthroughDiscoverPlace} />
                 <Stack.Screen name="Login" component={LoginScreen} />
             </Stack.Navigator>
     );

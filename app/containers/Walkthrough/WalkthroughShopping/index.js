@@ -17,7 +17,7 @@ import { IndicatorViewPager } from "rn-viewpager";
 
 //screen styles
 import styles from "./styles";
-import Images from "../../../Themes/Images";
+//import Images from "../../../Themes/Images";
 
 export default class WalkthroughShopping extends Component {
   constructor(props) {
@@ -27,10 +27,10 @@ export default class WalkthroughShopping extends Component {
 
   componentWillMount() {
     var that = this;
-    BackHandler.addEventListener("hardwareBackPress", function() {
+   /* BackHandler.addEventListener("hardwareBackPress", function() {
       that.props.navigation.navigate("Walkthrough");
       return true;
-    });
+    });*/
   }
 
   render() {
@@ -136,7 +136,6 @@ export default class WalkthroughShopping extends Component {
 
         <View style={styles.btnsec}>
           <TouchableOpacity style={styles.cartImgBg}>
-            <Image style={styles.cartImg} source={Images.cart} />
             <View style={styles.cartItemCountBg}>
               <Text style={styles.cartCountTxt}>5</Text>
             </View>

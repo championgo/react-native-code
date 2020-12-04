@@ -22,10 +22,10 @@ export default class WalkthroughAppUsageHints extends Component {
 
   componentWillMount() {
     var that = this;
-    BackHandler.addEventListener('hardwareBackPress', function() {
+    /*BackHandler.addEventListener('hardwareBackPress', function() {
       that.props.navigation.navigate('Walkthrough');
       return true;
-    });
+    });*/
   }
 
   render() {
